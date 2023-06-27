@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="x">
+        Name: <input type="text" name="s"><br>
+        <input type="button" name="c" value="click" onmouseover="x()">
+    </form>
+    <h1 onmouseover="changeBg('red')" onmouseout="changeBg('white')">Hover over me to change the background</h1>
+    <script>
+        function x() {
+            alert("Welcome!");
+        }
+
+        function changeBg(_color){
+            document.bgColor = _color;
+        }
+    </script>
+</body>
+</html>

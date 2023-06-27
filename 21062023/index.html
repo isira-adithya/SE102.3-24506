@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function handlelogin(){
+            if (document.form2.tex1.value.length == 0){
+                alert("Username is empty")
+            }
+            if (!isNaN(document.form2.tex2.value.length)) {
+                alert("Only numbers are allowed in the password field.")
+            }
+        }
+     </script>
+</head>
+<body>
+     <form name="form2" action="">
+        <label for="tex1">Username</label>
+        <input type="text" name="tex1" id="" placeholder="Username"> <br>
+        <label for="tex2">Password</label>
+        <input type="text" name="tex2" id="" placeholder="Password"> <br>
+        <input type="button" value="Signin" name="login" onclick="handlelogin()">
+        <input type="reset" value="Clear">
+     </form>
+</body>
+</html>

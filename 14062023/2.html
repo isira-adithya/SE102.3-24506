@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="changeBg2()" onmouseout="changeBg1()">Hover over me to change the background</button>
+    <script>
+        function changeBg1(){
+            document.bgColor = "white";
+        }
+
+        function changeBg2(){
+            document.bgColor = "green";
+        }
+
+
+        Today = new Date(); 
+        the_date = Today.getDate();
+        the_day = Today.getDay(); 
+        the_year = Today.getFullYear();
+        the_hour = Today.getHours();
+        the_month = Today.getMonth(); 
+        the_minute = Today.getMinutes(); 
+        the_second = Today.getSeconds();
+        the_time = Today.getTime();
+        the_local_Year = Today.getYear();
+    </script>
+</body>
+</html>

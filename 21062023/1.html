@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="t">
+        Name: <input type="text" name="a"> <br>
+        Gender (radiobutton): <input type="radio" name="gender" id="" value="M"> Male
+        <input type="radio" name="gender" id="" value="F"> Female <br>
+        Gender (checkbox): <input type="checkbox" name="genderM" id="" value="M"> Male
+        <input type="checkbox" name="genderF" id="" value="F"> Female <br>
+        Gender (select): 
+        <select name="genderselect">
+            <option value="">Select</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="t">Transgender</option>
+            <option value="nb">Non-Binary</option>
+        </select>
+        <br>
+        <input type="button" value="Check" onclick="x();">
+        
+    </form>
+    <script>
+        function x() {
+            if ((!document.t.gender[0].checked) && (!document.t.gender[1].checked)){
+                alert("PLease select gender using Radio Buttons");
+            }
+            if ((!document.t.genderM.checked) && (!document.t.genderF.checked)){
+                alert("PLease select gender using Check boxes");
+            }
+            if (document.t.genderselect.selectedIndex == 0){
+                alert("Please select a gender through select box.");
+            }
+        }
+    </script>
+</body>
+</html>
